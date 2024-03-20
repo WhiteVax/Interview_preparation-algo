@@ -15,8 +15,4 @@ public class Task39 {
             System.out.println("Нет");
         }
     }
-
-    public static void main(String[] args) {
-        System.out.println(327 % 10);
-    }
 }
