@@ -11,8 +11,4 @@ public class Task25 {
             System.out.println("Нет");
         }
     }
-
-    public static void main(String[] args) {
-        isPositive(-1);
-    }
 }

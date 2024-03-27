@@ -11,8 +11,4 @@ public class Task23 {
             System.out.println("Нет");
         }
     }
-
-    public static void main(String[] args) {
-        isExist(2, 5);
-    }
 }

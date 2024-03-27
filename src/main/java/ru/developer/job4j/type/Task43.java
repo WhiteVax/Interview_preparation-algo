@@ -11,8 +11,4 @@ public class Task43 {
         System.out.println(number1 / 10 * 10 + number2 % 10);
         System.out.println(number2 / 10 * 10 + number1 % 10);
     }
-
-    public static void main(String[] args) {
-        rightNumChange(123, 456);
-    }
 }

@@ -11,6 +11,5 @@ public class Task23 {
         System.out.print(number % 10 + " ");
         System.out.print(number / 10 % 10 + " ");
         System.out.print(number / 100 );
-
     }
 }

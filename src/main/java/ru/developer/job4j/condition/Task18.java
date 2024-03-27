@@ -9,10 +9,4 @@ public class Task18 {
         number = number > 0 && number / 100 > 0 ? number - 1 : number;
         System.out.println(number);
     }
-
-    public static void main(String[] args) {
-        numDecrease(100);
-
-        System.out.println(99 / 1000);
-    }
 }
