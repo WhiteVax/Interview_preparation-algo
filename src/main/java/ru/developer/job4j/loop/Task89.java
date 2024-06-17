@@ -5,8 +5,6 @@ import java.util.StringJoiner;
 /**
  * Написать код, который находит и выводит в консоль через пробел все трехзначные числа Армстронга,
  * а также их количество.
- *
- *
  */
 public class Task89 {
     public static void loop() {
