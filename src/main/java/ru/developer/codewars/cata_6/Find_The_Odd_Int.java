@@ -1,4 +1,4 @@
-package ru.developer.codewars.cata_4;
+package ru.developer.codewars.cata_6;
 
 import java.util.*;
 import java.util.function.Function;

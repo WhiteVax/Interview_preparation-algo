@@ -1,4 +1,4 @@
-package ru.developer.codewars.cata_4;
+package ru.developer.codewars.cata_6;
 
 import static java.util.stream.IntStream.iterate;
 
