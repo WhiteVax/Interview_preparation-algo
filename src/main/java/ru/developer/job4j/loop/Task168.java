@@ -14,9 +14,9 @@ public class Task168 {
     public static void loop(int num1, int num2, int num3) {
         int[] array = new int[9];
 
-        setSumNumbersAndCounterNum(array, num1, 0, 1); // 2 // 0 1
-        setSumNumbersAndCounterNum(array, num2, 3, 4); // 5 // 3 4
-        setSumNumbersAndCounterNum(array, num3, 6, 7); // 8 6 7
+        setSumNumbersAndCounterNum(array, num1, 0, 1);
+        setSumNumbersAndCounterNum(array, num2, 3, 4);
+        setSumNumbersAndCounterNum(array, num3, 6, 7);
 
         setCounterDividers(num1, array, 2);
         setCounterDividers(num2, array, 5);
