@@ -1,15 +1,11 @@
 package ru.developer.job4j.condition;
 
-import org.junit.Test;
-
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.StringJoiner;
 
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
-
+import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.*;
 public class Task55Test {
     @Test
     public void when12Then4And3() {
@@ -19,7 +15,7 @@ public class Task55Test {
         StringJoiner expected = new StringJoiner(
                 System.lineSeparator(), "", System.lineSeparator())
                 .add("4").add("3");
-        assertThat(out.toString(), is(expected.toString()));
+        assertThat(out.toString()).isEqualTo(expected.toString());
     }
 
     @Test
@@ -30,7 +26,7 @@ public class Task55Test {
         StringJoiner expected = new StringJoiner(
                 System.lineSeparator(), "", System.lineSeparator())
                 .add("1").add("1");
-        assertThat(out.toString(), is(expected.toString()));
+        assertThat(out.toString()).isEqualTo(expected.toString());
     }
 
     @Test
@@ -41,7 +37,7 @@ public class Task55Test {
         StringJoiner expected = new StringJoiner(
                 System.lineSeparator(), "", System.lineSeparator())
                 .add("4").add("1");
-        assertThat(out.toString(), is(expected.toString()));
+        assertThat(out.toString()).isEqualTo(expected.toString());
     }
 
     @Test
@@ -52,7 +48,7 @@ public class Task55Test {
         StringJoiner expected = new StringJoiner(
                 System.lineSeparator(), "", System.lineSeparator())
                 .add("3").add("2");
-        assertThat(out.toString(), is(expected.toString()));
+        assertThat(out.toString()).isEqualTo(expected.toString());
     }
 
     @Test
@@ -63,7 +59,7 @@ public class Task55Test {
         StringJoiner expected = new StringJoiner(
                 System.lineSeparator(), "", System.lineSeparator())
                 .add("7").add("3");
-        assertThat(out.toString(), is(expected.toString()));
+        assertThat(out.toString()).isEqualTo(expected.toString());
     }
 
     @Test
@@ -74,7 +70,7 @@ public class Task55Test {
         StringJoiner expected = new StringJoiner(
                 System.lineSeparator(), "", System.lineSeparator())
                 .add("1").add("2");
-        assertThat(out.toString(), is(expected.toString()));
+        assertThat(out.toString()).isEqualTo(expected.toString());
     }
 
     @Test
@@ -85,6 +81,6 @@ public class Task55Test {
         StringJoiner expected = new StringJoiner(
                 System.lineSeparator(), "", System.lineSeparator())
                 .add("1").add("3");
-        assertThat(out.toString(), is(expected.toString()));
+        assertThat(out.toString()).isEqualTo(expected.toString());
     }
 }

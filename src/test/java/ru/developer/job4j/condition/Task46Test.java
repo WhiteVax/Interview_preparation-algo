@@ -1,14 +1,11 @@
 package ru.developer.job4j.condition;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.*;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.StringJoiner;
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.core.Is.is;
-import static org.junit.jupiter.api.Assertions.*;
 
 public class Task46Test {
     public String ln = System.lineSeparator();
@@ -21,7 +18,7 @@ public class Task46Test {
         StringJoiner expected = new StringJoiner(
                 System.lineSeparator(), "", System.lineSeparator())
                 .add("18").add("24");
-        assertThat(out.toString(), is(expected.toString()));
+        assertThat(out.toString()).isEqualTo(expected.toString());
     }
 
     @Test
@@ -32,7 +29,7 @@ public class Task46Test {
         StringJoiner expected = new StringJoiner(
                 System.lineSeparator(), "", System.lineSeparator())
                 .add("511").add("257");
-        assertThat(out.toString(), is(expected.toString()));
+        assertThat(out.toString()).isEqualTo(expected.toString());
     }
 
     @Test
@@ -43,6 +40,6 @@ public class Task46Test {
         StringJoiner expected = new StringJoiner(
                 System.lineSeparator(), "", System.lineSeparator())
                 .add("101").add("101");
-        assertThat(out.toString(), is(expected.toString()));
+        assertThat(out.toString()).isEqualTo(expected.toString());
     }
 }

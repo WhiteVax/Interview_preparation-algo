@@ -1,13 +1,10 @@
 package ru.developer.job4j.condition;
 
-import org.junit.Test;
-
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.*;
 
 public class Task78Test {
     public String ln = System.lineSeparator();
@@ -18,7 +15,7 @@ public class Task78Test {
         System.setOut(new PrintStream(out));
         Task78.divWithoutRemainder(223);
         String expected = "Таких чисел нет" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -27,7 +24,7 @@ public class Task78Test {
         System.setOut(new PrintStream(out));
         Task78.divWithoutRemainder(222);
         String expected = "2 2 2" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -36,7 +33,7 @@ public class Task78Test {
         System.setOut(new PrintStream(out));
         Task78.divWithoutRemainder(456);
         String expected = "4 6" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -45,6 +42,6 @@ public class Task78Test {
         System.setOut(new PrintStream(out));
         Task78.divWithoutRemainder(100);
         String expected = "1" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 }

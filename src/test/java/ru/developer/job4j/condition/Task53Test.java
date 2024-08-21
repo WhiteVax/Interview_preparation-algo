@@ -5,10 +5,8 @@ import org.junit.jupiter.api.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
-
+import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.*;
 class Task53Test {
     public String ln = System.lineSeparator();
 
@@ -18,7 +16,7 @@ class Task53Test {
         System.setOut(new PrintStream(out));
         Task53.transformFraction(3, 3);
         String expected = "1" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -27,7 +25,7 @@ class Task53Test {
         System.setOut(new PrintStream(out));
         Task53.transformFraction(1, 3);
         String expected = "Подсчет не производится" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -36,7 +34,7 @@ class Task53Test {
         System.setOut(new PrintStream(out));
         Task53.transformFraction(2, 7);
         String expected = "Подсчет не производится" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -45,7 +43,7 @@ class Task53Test {
         System.setOut(new PrintStream(out));
         Task53.transformFraction(5, 3);
         String expected = "1 2/3" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -54,7 +52,7 @@ class Task53Test {
         System.setOut(new PrintStream(out));
         Task53.transformFraction(9, 3);
         String expected = "3" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -63,6 +61,6 @@ class Task53Test {
         System.setOut(new PrintStream(out));
         Task53.transformFraction(12, 7);
         String expected = "1 5/7" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 }

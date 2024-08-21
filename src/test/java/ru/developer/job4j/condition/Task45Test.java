@@ -1,13 +1,9 @@
 package ru.developer.job4j.condition;
-
-import org.junit.Test;
-
+import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.*;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 public class Task45Test {
     public String ln = System.lineSeparator();
@@ -18,7 +14,7 @@ public class Task45Test {
         System.setOut(new PrintStream(out));
         Task45.changeToRoundNum(23);
         String expected = "Уменьшено до 20" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -27,7 +23,7 @@ public class Task45Test {
         System.setOut(new PrintStream(out));
         Task45.changeToRoundNum(339);
         String expected = "Уменьшено до 330" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -36,7 +32,7 @@ public class Task45Test {
         System.setOut(new PrintStream(out));
         Task45.changeToRoundNum(272);
         String expected = "Увеличено до 280" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -45,6 +41,6 @@ public class Task45Test {
         System.setOut(new PrintStream(out));
         Task45.changeToRoundNum(20);
         String expected = "Без изменений" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 }

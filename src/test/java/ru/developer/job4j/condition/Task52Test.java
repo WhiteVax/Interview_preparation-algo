@@ -1,12 +1,10 @@
 package ru.developer.job4j.condition;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.*;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
 
 public class Task52Test {
     public String ln = System.lineSeparator();
@@ -17,7 +15,7 @@ public class Task52Test {
         System.setOut(new PrintStream(out));
         Task52.isEquals(3, 3, 8, 8);
         String expected = "Да" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -26,7 +24,7 @@ public class Task52Test {
         System.setOut(new PrintStream(out));
         Task52.isEquals(2, 5, 6, 15);
         String expected = "Да" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -35,7 +33,7 @@ public class Task52Test {
         System.setOut(new PrintStream(out));
         Task52.isEquals(1, 3, 2, 6);
         String expected = "Да" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -44,7 +42,7 @@ public class Task52Test {
         System.setOut(new PrintStream(out));
         Task52.isEquals(1, 3, 1, 4);
         String expected = "Нет" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -53,7 +51,7 @@ public class Task52Test {
         System.setOut(new PrintStream(out));
         Task52.isEquals(2, 7, 3, 8);
         String expected = "Нет" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -62,6 +60,6 @@ public class Task52Test {
         System.setOut(new PrintStream(out));
         Task52.isEquals(8, 3, 11, 4);
         String expected = "Нет" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 }

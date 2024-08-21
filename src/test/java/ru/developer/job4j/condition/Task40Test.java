@@ -1,13 +1,9 @@
 package ru.developer.job4j.condition;
 
 import org.junit.jupiter.api.Test;
-
+import static org.assertj.core.api.Assertions.*;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.*;
-
 
 class Task40Test {
     public String ln = System.lineSeparator();
@@ -18,7 +14,7 @@ class Task40Test {
         System.setOut(new PrintStream(out));
         Task40.isDoubleEven(158);
         String expected = "Да" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -27,7 +23,7 @@ class Task40Test {
         System.setOut(new PrintStream(out));
         Task40.isDoubleEven(990);
         String expected = "Да" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -36,7 +32,7 @@ class Task40Test {
         System.setOut(new PrintStream(out));
         Task40.isDoubleEven(108);
         String expected = "Нет" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -45,7 +41,7 @@ class Task40Test {
         System.setOut(new PrintStream(out));
         Task40.isDoubleEven(980);
         String expected = "Нет" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -54,7 +50,7 @@ class Task40Test {
         System.setOut(new PrintStream(out));
         Task40.isDoubleEven(363);
         String expected = "Нет" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 
     @Test
@@ -63,6 +59,6 @@ class Task40Test {
         System.setOut(new PrintStream(out));
         Task40.isDoubleEven(111);
         String expected = "Нет" + ln;
-        assertThat(out.toString(), is(expected));
+        assertThat(out.toString()).isEqualTo(expected);
     }
 }
