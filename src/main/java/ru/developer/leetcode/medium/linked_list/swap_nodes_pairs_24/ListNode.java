@@ -1,4 +1,4 @@
-package ru.developer.leetcode.medium.swap_nodes_pairs_24;
+package ru.developer.leetcode.medium.linked_list.swap_nodes_pairs_24;
 
 public class ListNode {
     public int val;

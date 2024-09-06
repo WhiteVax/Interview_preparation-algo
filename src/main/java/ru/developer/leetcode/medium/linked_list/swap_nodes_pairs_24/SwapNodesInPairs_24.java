@@ -1,6 +1,4 @@
-package ru.developer.leetcode.medium;
-
-import ru.developer.leetcode.medium.swap_nodes_pairs_24.ListNode;
+package ru.developer.leetcode.medium.linked_list.swap_nodes_pairs_24;
 
 /**
  * Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without
