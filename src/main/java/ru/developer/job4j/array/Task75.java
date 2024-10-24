@@ -1,7 +1,5 @@
 package ru.developer.job4j.array;
 
-import java.io.InputStream;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.StringJoiner;
 import java.util.stream.Collectors;
