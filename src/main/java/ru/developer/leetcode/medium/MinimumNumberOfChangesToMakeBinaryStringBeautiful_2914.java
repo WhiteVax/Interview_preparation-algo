@@ -1,5 +1,7 @@
 package ru.developer.leetcode.medium;
 
+import java.util.Arrays;
+
 /**
  * You are given a 0-indexed binary string s having an even length.
  * <p>
@@ -16,15 +18,15 @@ package ru.developer.leetcode.medium;
  * Explanation: We change s[1] to 1 and s[3] to 0 to get string "1100".
  * It can be seen that the string "1100" is beautiful because we can partition it into "11|00".
  * It can be proven that 2 is the minimum number of changes needed to make the string beautiful.
+ *
  * Example 2:
- * <p>
  * Input: s = "10"
  * Output: 1
  * Explanation: We change s[1] to 1 to get string "11".
  * It can be seen that the string "11" is beautiful because we can partition it into "11".
  * It can be proven that 1 is the minimum number of changes needed to make the string beautiful.
+ *
  * Example 3:
- * <p>
  * Input: s = "0000"
  * Output: 0
  * Explanation: We don't need to make any changes as the string "0000" is beautiful already.
