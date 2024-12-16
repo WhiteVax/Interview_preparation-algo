@@ -1,5 +1,7 @@
 package ru.developer.leetcode.easy.array;
 
+import java.util.HashSet;
+
 /**
  * https://leetcode.com/problems/single-number/
  *
@@ -21,11 +23,17 @@ package ru.developer.leetcode.easy.array;
  */
 public class SingleNumber_136 {
     public int singleNumber(int[] nums) {
-        var rsl = 0;
+//        var rsl = 0;
+//        for (int num : nums) {
+//            // числа которые встречаются дважды обнуляются
+//            rsl ^= num;
+//        }
+        HashSet<Integer> set = new HashSet<>();
         for (int num : nums) {
-            // числа которые встречаются дважды обнуляются
-            rsl ^= num;
+            if (!set.add(num)) {
+                set.remove(num);
+            }
         }
-        return rsl;
+        return set.iterator().next();
     }
 }
