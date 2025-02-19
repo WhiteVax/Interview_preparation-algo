@@ -21,6 +21,11 @@ package ru.developer.leetcode.easy.array;
 public class TwoSum_1 {
     public int[] twoSum(int[] nums, int target) {
         int[] array = new int[2];
+        // можно через мапу, добавляем в мапу, от таргета - значение ища его в мапе
+        // map -> map.put(all i value),
+        // for () temp = target - nums[i]
+        // if (map.get(i) != temp && map.contains(temp))
+        // array[0] = i; array[1] = map.get(); если абстрактно
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
                 if (nums[i] + nums[j] == target) {
