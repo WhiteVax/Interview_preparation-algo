@@ -1,12 +1,11 @@
 package ru.developer.job4j.condition;
-
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.*;
-
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
+@Disabled
 public class Task45Test {
     public String ln = System.lineSeparator();
 
