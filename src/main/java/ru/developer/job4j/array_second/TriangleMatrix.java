@@ -1,4 +1,4 @@
-package ru.developer.job4j.array;
+package ru.developer.job4j.array_second;
 
 /**
  * Треугольная матрица, это матрица вида:

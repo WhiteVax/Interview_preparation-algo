@@ -1,4 +1,4 @@
-package ru.developer.job4j.array;
+package ru.developer.job4j.array_second;
 
 /**
  * Класс печатает элементы массива, при этом он должен пропустить в каждом ряду первый и последний элемент
