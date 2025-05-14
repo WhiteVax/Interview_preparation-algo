@@ -60,7 +60,7 @@ public class BattleShip {
     private void sinkShip(int[][] sea, int row, int col) {
         int rows = sea.length;
         int cols = sea[0].length;
-        if (row < 0 || col < 0 || row >= rows || col >= cols || sea[row][col] == 0) {
+        if (row >= rows || col >= cols || sea[row][col] == 0) {
             return;
         }
         sea[row][col] = 0;
